@@ -12,7 +12,7 @@ An animated, colorful ASCII Christmas scene for the terminal, written in pure Py
 
 ```bash
 python3 christmas_tree.py            # loops forever (about 42 s per show), Ctrl+C to quit
-python3 christmas_tree.py --once     # play once, then keep the decorated tree on screen
+python3 christmas_tree.py -i         # never reset: keeps snowing and spinning after the greeting
 ```
 
 Options:

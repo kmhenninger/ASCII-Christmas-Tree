@@ -868,8 +868,8 @@ def main():
     ap = argparse.ArgumentParser(description="Animated ASCII Christmas tree.")
     ap.add_argument("--fps", type=float, default=20, help="frames per second (default 20)")
     ap.add_argument("--speed", type=float, default=1.0, help="animation speed multiplier")
-    ap.add_argument("--once", action="store_true",
-                    help="play the show once, then keep the decorated tree on screen")
+    ap.add_argument("-i", "--infinite", "--once", dest="once", action="store_true",
+                    help="never reset: after the greeting, keep snowing and spinning forever")
     ap.add_argument("--start", type=float, default=0.0,
                     help="start at this many seconds into the show")
     ap.add_argument("--colors", choices=("auto", "truecolor", "256"), default="auto",
